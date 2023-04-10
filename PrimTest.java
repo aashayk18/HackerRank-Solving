@@ -6,14 +6,10 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-
-
 public class PrimTest {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-
         String n = bufferedReader.readLine();
-        
         bufferedReader.close();
         BigInteger a = new BigInteger(n);
         if(a.isProbablePrime(1)){
