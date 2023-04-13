@@ -10,16 +10,11 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-
-
 public class IfElse {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-
         int N = Integer.parseInt(bufferedReader.readLine().trim());
-
         bufferedReader.close();
-        
         if (N%2!=0){
             System.out.println("Weird");
         } else if (N%2==0 && N >= 2 && N <= 5 ) {
