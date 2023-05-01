@@ -1,5 +1,3 @@
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-
 n = int(input())
 col_list = list(input().split())
 marks_col = col_list.index("MARKS")
