@@ -1,5 +1,3 @@
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-
 import collections, re
 n = int(input())
 item_od = collections.OrderedDict()
