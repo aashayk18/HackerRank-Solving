@@ -4,19 +4,17 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class Solution {
+public class CurrForm {
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double payment = scanner.nextDouble();
         scanner.close();
 
-        // Write your code here.
-        
-        String us = NumberFormat.getCurrencyInstance(Locale.US).format           (payment);
+        String us = NumberFormat.getCurrencyInstance(Locale.US).format(payment);
         String india = "Rs." + us.substring(1);
-        String china = NumberFormat.getCurrencyInstance(Locale.CHINA)            .format(payment);
-        String france = NumberFormat.getCurrencyInstance(Locale.FRANCE)          .format(payment); 
+        String china = NumberFormat.getCurrencyInstance(Locale.CHINA).format(payment);
+        String france = NumberFormat.getCurrencyInstance(Locale.FRANCE).format(payment); 
         
         System.out.println("US: " + us);
         System.out.println("India: " + india);
