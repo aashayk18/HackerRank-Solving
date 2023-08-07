@@ -1,0 +1,1 @@
+select b.hacker_id, a.name, sum(b.max_score) as total_score from (select hacker_id ,challenge_id,max(score) as max_score from submissions group by hacker_id, challenge_id) as b inner join hackers as a on b.hacker_id = a.hacker_id group by b.hacker_id,a.name having total_score != 0 order by total_score desc, b.hacker_id ;
